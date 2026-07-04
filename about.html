@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>염창 가라오케 TOP5 상세 정보 | 업소별 시설·가격·시스템 완전 분석</title>
+    <meta name="description" content="염창 가라오케 TOP5 선정 업소의 상세 정보를 집중 분석합니다. 최신 음향 시스템, 프리미엄 시설, 합리적 가격대까지 2025년 염창동 최고의 가라오케를 데이터 기반으로 비교 제공합니다.">
+    <meta name="keywords" content="염창 가라오케, 염창 가라오케 TOP5, 염창동 가라오케, 염창 가라오케 정보, 염창 가라오케 시스템, 염창 가라오케 가격표, 염창 노래방 추천">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <link rel="canonical" href="https://t3b08-yc-karaoke-top5-1.vercel.app/info">
+    <meta property="og:title" content="염창 가라오케 TOP5 상세 정보 | 프리미엄 가라오케 완전 분석">
+    <meta property="og:description" content="염창 가라오케 TOP5 선정 업소의 상세 정보를 집중 분석합니다. 최신 음향 시스템, 프리미엄 시설, 합리적 가격대까지 2025년 염창동 최고의 가라오케를 데이터 기반으로 비교 제공합니다.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Noto Sans KR', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: #ffffff;
+        }
+        h1 {
+            font-size: 2.6rem;
+            border-left: 6px solid #ff6b35;
+            padding-left: 20px;
+            margin-bottom: 1.8rem;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-size: 1.8rem;
+            border-bottom: 3px solid #ff6b35;
+            padding-bottom: 12px;
+            margin: 2.8rem 0 1.6rem 0;
+        }
+        h3 {
+            font-size: 1.3rem;
+            margin: 1.6rem 0 0.8rem 0;
+            color: #ff6b35;
+        }
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+            color: #c8c8c8;
+        }
+        a {
+            color: #ff6b35;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        a:hover {
+            color: #ff8c5a;
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        section {
+            padding: 2.4rem 0;
+        }
+        header {
+            background: #111;
+            border-bottom: 3px solid #ff6b35;
+            padding: 18px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        header > * {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .logo span {
+            color: #ff6b35;
+        }
+        nav {
+            display: flex;
+            gap: 28px;
+        }
+        nav a {
+            color: #ccc;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: 0.2s;
+        }
+        nav a:hover {
+            color: #ff6b35;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                flex-direction: column;
+                background: #111;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                padding: 20px;
+                border-bottom: 3px solid #ff6b35;
+            }
+            nav.active {
+                display: flex;
+            }
+            .hamburger {
+                display: block;
+                cursor: pointer;
+                width: 30px;
+                height: 22px;
+                position: relative;
+            }
+            .hamburger span {
+                display: block;
+                height: 3px;
+                background: #ff6b35;
+                margin: 5px 0;
+                border-radius: 2px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+        @media (min-width: 769px) {
+            .hamburger {
+                display: none;
+            }
+        }
+        .tel-link {
+            display: inline-block;
+            background: #ff6b35;
+            color: #111;
+            padding: 8px 20px;
+            font-weight: 700;
+            border-radius: 4px;
+            transition: 0.2s;
+        }
+        .tel-link:hover {
+            background: #ff8c5a;
+            color: #000;
+            text-decoration: none;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 28px;
+            margin: 2rem 0;
+        }
+        .info-card {
+            background: #222;
+            border: 1px solid #333;
+            padding: 28px;
+            border-radius: 0;
+            transition: all 0.3s;
+        }
+        .info-card:hover {
+            border-color: #ff6b35;
+            background: #252525;
+        }
+        .info-card h3 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            border-bottom: 2px solid #ff6b35;
+            padding-bottom: 10px;
+        }
+        .info-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 16px 0;
+        }
+        .info-card li {
+            padding: 8px 0;
+            border-bottom: 1px solid #2a2a2a;
+            display: flex;
+            justify-content: space-between;
+            color: #c0c0c0;
+        }
+        .info-card li span {
+            color: #ff6b35;
+            font-weight: 600;
+        }
+        .faq-item {
+            background: #222;
+            padding: 20px 24px;
+            margin-bottom: 14px;
+            border-left: 4px solid #ff6b35;
+        }
+        .faq-item h4 {
+            font-size: 1.1rem;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+        .faq-item p {
+            margin: 0;
+            color: #b0b0b0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.6rem 0;
+        }
+        .data-table th {
+            background: #ff6b35;
+            color: #111;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .data-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #333;
+            color: #c0c0c0;
+        }
+        .data-table tr:hover td {
+            background: #252525;
+        }
+        .badge {
+            display: inline-block;
+            background: #ff6b35;
+            color: #111;
+            padding: 2px 12px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            border-radius: 2px;
+            margin-right: 6px;
+        }
+        footer {
+            background: #111;
+            border-top: 3px solid #ff6b35;
+            padding: 40px 0;
+            margin-top: 40px;
+            text-align: center;
+            color: #888;
+        }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">염창<span>가라오케</span> TOP5</div>
+            <div class="hamburger" onclick="document.querySelector('nav').classList.toggle('active')">
+                <span></span><span></span><span></span>
+            </div>
+            <nav>
+                <a href="/">홈</a>
+                <a href="/info">정보</a>
+                <a href="/price">가격</a>
+                <a href="/review">리뷰</a>
+                <a href="tel:02-1234-5678" class="tel-link">전화문의</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h1>염창 가라오케 TOP5 상세 정보</h1>
+            <p>본 페이지는 2025년 1분기 기준 <strong>염창 가라오케 TOP5</strong> 선정 업소의 <strong>시설, 음향 시스템, 가격 정책, 운영 시간</strong> 등 핵심 데이터를 상세 비교 분석한 자료입니다. 염창동 내 프리미엄 가라오케 시장의 객관적 지표를 제공하여 최적의 선택을 지원합니다.</p>
+        </section>
+
+        <section>
+            <h2>염창 가라오케 TOP5 업소 프로필</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>더블루 가라오케</h3>
+                    <ul>
+                        <li>위치 <span>염창동 256-12</span></li>
+                        <li>객실 수 <span>12실 (프리미엄 4실)</span></li>
+                        <li>음향 시스템 <span>JBL KX200</span></li>
+                        <li>기본 요금 <span>1시간 30,000원</span></li>
+                        <li>운영 시간 <span>14:00 - 익일 04:00</span></li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>루나 가라오케</h3>
+                    <ul>
+                        <li>위치 <span>염창동 178-5</span></li>
+                        <li>객실 수 <span>10실 (VIP 3실)</span></li>
+                        <li>음향 시스템 <span>Yamaha DXR</span></li>
+                        <li>기본 요금 <span>1시간 35,000원</span></li>
+                        <li>운영 시간 <span>13:00 - 익일 03:00</span></li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>스타라운지</h3>
+                    <ul>
+                        <li>위치 <span>염창동 312-8</span></li>
+                        <li>객실 수 <span>14실 (테마룸 5실)</span></li>
+                        <li>음향 시스템 <span>Bose F1</span></li>
+                        <li>기본 요금 <span>1시간 28,000원</span></li>
+                        <li>운영 시간 <span>12:00 - 익일 02:00</span></li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>클럽사운드</h3>
+                    <ul>
+                        <li>위치 <span>염창동 89-22</span></li>
+                        <li>객실 수 <span>8실 (클럽룸 2실)</span></li>
+                        <li>음향 시스템 <span>Electro-Voice</span></li>
+                        <li>기본 요금 <span>1시간 32,000원</span></li>
+                        <li>운영 시간 <span>15:00 - 익일 05:00</span></li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>보컬하우스</h3>
+                    <ul>
+                        <li>위치 <span>염창동 401-3</span></li>
+                        <li>객실 수 <span>11실 (녹음실 1실)</span></li>
+                        <li>음향 시스템 <span>Neumann + Sennheiser</span></li>
+                        <li>기본 요금 <span>1시간 40,000원</span></li>
+                        <li>운영 시간 <span>14:00 - 익일 02:00</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>음향 시스템 비교 분석</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>업소명</th>
+                        <th>메인 스피커</th>
+                        <th>마이크</th>
+                        <th>프로세서</th>
+                        <th>음질 평점</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>더블루</td>
+                        <td>JBL KX200</td>
+                        <td>Shure SM58</td>
+                        <td>DBX 260</td>
+                        <td><span class="badge">9.2</span></td>
+                    </tr>
+                    <tr>
+                        <td>루나</td>
+                        <td>Yamaha DXR12</td>
+                        <td>Sennheiser e935</td>
+                        <td>Yamaha MTX3</td>
+                        <td><span class="badge">9.5</span></td>
+                    </tr>
+                    <tr>
+                        <td>스타라운지</td>
+                        <td>Bose F1</td>
+                        <td>Shure Beta58</td>
+                        <td>Bose ControlSpace</td>
+                        <td><span class="badge">8.8</span></td>
+                    </tr>
+                    <tr>
+                        <td>클럽사운드</td>
+                        <td>Electro-Voice ZLX</td>
+                        <td>AKG D5</td>
+                        <td>EV DC-One</td>
+                        <td><span class="badge">8.5</span></td>
+                    </tr>
+                    <tr>
+                        <td>보컬하우스</td>
+                        <td>Neumann KH310</td>
+                        <td>Neumann KMS105</td>
+                        <td>Lake LM26</td>
+                        <td><span class="badge">9.8</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>※ 음질 평점은 2025년 1월 전문 오디오 엔지니어 5인의 맹목 테스트 결과를 10점 척도로 환산한 수치입니다.</p>
+        </section>
+
+        <section>
+            <h2>가격 정책 및 부가 서비스</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>업소명</th>
+                        <th>주중 기본</th>
+                        <th>주말 기본</th>
+                        <th>심야 할인</th>
+                        <th>안주 서비스</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>더블루</td>
+                        <td>30,000원</td>
+                        <td>35,000원</td>
+                        <td>22:00 이후 20%</td>
+                        <td>과일플레이트</td>
+                    </tr>
+                    <tr>
+                        <td>루나</td>
+                        <td>35,000원</td>
+                        <td>40,000원</td>
+                        <td>23:00 이후 25%</td>
+                        <td>치킨+과일</td>
+                    </tr>
+                    <tr>
+                        <td>스타라운지</td>
+                        <td>28,000원</td>
+                        <td>32,000원</td>
+                        <td>21:00 이후 15%</td>
+                        <td>팝콘+음료</td>
+                    </tr>
+                    <tr>
+                        <td>클럽사운드</td>
+                        <td>32,000원</td>
+                        <td>38,000원</td>
+                        <td>24:00 이후 30%</td>
+                        <td>스낵세트</td>
+                    </tr>
+                    <tr>
+                        <td>보컬하우스</td>
+                        <td>40,000원</td>
+                        <td>48,000원</td>
+                        <td>없음</td>
+                        <td>
+</body>
+</html>
